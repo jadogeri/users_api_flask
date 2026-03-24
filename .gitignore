@@ -9,3 +9,6 @@ __pycache__/
 
 # Environment variables (Secrets)
 .env
+
+# Database files
+*.db
