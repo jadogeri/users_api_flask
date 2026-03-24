@@ -1,11 +1,20 @@
-
-# generate requirements.txt 
+# --- ONE-TIME SETUP ---
+# Create the environment
 python -m venv .venv
-.\venv\Scripts\Activate
-pip freeze > requirements.txt
 
+# Activate (Windows)
+.venv\Scripts\activate
 
-# install packages
-python -m venv .venv
-source .venv/Scripts/activate
+# Activate (Mac/Linux)
+source .venv/bin/activate
+
+# --- INSTALLING ---
+# Install your specific needs first
+pip install flask flask-sqlalchemy python-dotenv
+
+# OR Install everything from a shared list
 pip install -r requirements.txt
+
+# --- SAVING YOUR PROGRESS ---
+# Update the "shopping list" whenever you install something new
+pip freeze > requirements.txt
