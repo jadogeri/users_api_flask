@@ -71,6 +71,7 @@ Once the server is running, access the interactive documentation at:
 
 ## 📄 Project Structure
 
+```
 📂 flask-user-api/ (Root)
 ├── 📂 .venv/                   # 🐍 Python Virtual Environment (Dependencies)
 ├── 📂 .idea/                   # ⚙️ IDE configuration (PyCharm/JetBrains)
@@ -87,4 +88,4 @@ Once the server is running, access the interactive documentation at:
 ├── 📄 README.md                # 📖 Project documentation & instructions
 └── 📄 requirements.txt         # 📦 List of Python dependencies
 
- 
+ ```
