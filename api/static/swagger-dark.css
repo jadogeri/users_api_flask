@@ -1,0 +1,62 @@
+/* Base Styles */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+body.dark-mode {
+    --bg-color: #1b1b1b;
+    --text-color: #cccccc;
+    background-color: var(--bg-color) !important;
+}
+
+/* The Toggle Button (Bulb) */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 9999;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    width: 50px;
+}
+
+.theme-switch input { display: none; }
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    background-color: white;
+    bottom: 4px;
+    content: "";
+    height: 16px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 16px;
+    border-radius: 50%;
+}
+
+input:checked + .slider { background-color: #2ab934; }
+input:checked + .slider:before { transform: translateX(26px); }
+
+/* Dark Mode Overrides */
+body.dark-mode .swagger-ui { background-color: #1b1b1b; color: #ccc; }
+body.dark-mode .swagger-ui .info .title, 
+body.dark-mode .swagger-ui .opblock-tag { color: #fff !important; }
