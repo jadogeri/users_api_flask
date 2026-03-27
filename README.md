@@ -45,10 +45,8 @@ Note: commands are available in `commands.txt`
     
 5.  Run the application:
     
-        python app.py
-        
+        python app.py        
     
-    \
 
 * * *
 
@@ -56,7 +54,7 @@ Note: commands are available in `commands.txt`
 
 Once the server is running, access the interactive documentation at:
 
-*   Flasgger UI: `http://localhost:4000/api/v1` \
+*   Flasgger UI: `http://localhost:4000/api/v1` 
 
 * * *
 
