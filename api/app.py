@@ -2,6 +2,8 @@ from flask import Flask
 from extensions import db
 from namespaces import api, api_bp, user_ns
 import routes.user_routes  # <--- MUST import here to register the @route decorators
+from dotenv import load_dotenv
+import os
 
 def create_app():
     app = Flask(__name__)
@@ -28,5 +30,14 @@ def create_app():
     return app
 
 if __name__ == '__main__':
+    # 1. Load the .env file FIRST
+    load_dotenv()
+
     app = create_app()
-    app.run(debug=True)
+
+    # 2. Get the port from environment, default to 5000 if not found
+    # Note: os.getenv returns a string, so you must cast it to an int
+    port = int(os.getenv('PORT', 5000))
+
+    # 3. Pass the port to the run method
+    app.run(debug=True, port=port)
