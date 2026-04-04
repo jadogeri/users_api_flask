@@ -1,8 +1,10 @@
 ## 🚀 Flask RESTful User API
 
+```
 **Author:** Joseph Adogeri
 **Version:** 1.0
 **Date:** March 27, 2026
+```
 
 ---
 
