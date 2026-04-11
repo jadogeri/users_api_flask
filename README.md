@@ -62,8 +62,6 @@ Once the server is running, access the interactive documentation at:
 
 ## 🛣 API Endpoints
 
-## 👤 User Management CRUD
-
 | Method  | Endpoint | Description |
 | --- | --- | --- |
 | 📥 GET | /users | Get All: Retrieve a list of all registered users |
