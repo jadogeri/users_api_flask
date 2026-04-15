@@ -10,7 +10,7 @@
 
 ## Description
 
-A robust Python Flask CRUD (Create, Read, Update, Delete) API for managing user data. This project leverages SQLAlchemy for ORM management and provides an automatically documented interface via Flask-RESTX and Flasgger. 
+A robust Python Flask CRUD (Create, Read, Update, Delete) API for managing user data. This project leverages SQLAlchemy for ORM management and provides automatic documented interface via Flask-RESTX and Flasgger. 
 
 
 * * *
